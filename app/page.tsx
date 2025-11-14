@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
-import { boot } from './lib/main';
+import { boot } from '@/main';
 import { Activity, Triangle, Square, Zap, ArrowRight, ArrowLeft, X, Move, Circle, RotateCw, Minus, Palette, Rainbow, Monitor, Layers, Sun, Blend, Gauge, Settings, CheckCircle, AlertTriangle, Pause, Maximize, Menu } from 'lucide-react';
 
 export default function Page() {
