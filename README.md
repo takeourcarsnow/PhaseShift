@@ -64,7 +64,17 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 ## Security
 
-✅ **Dependency update (2025-12-29):** Upgraded `react` and `react-dom` to **19.2.3** to mitigate **CVE-2025-55183** and **CVE-2025-55184**. After pulling these changes run `npm install` to refresh your lockfile and then `npm audit` to verify there are no remaining advisories.
+✅ **Dependency updates (2025-12-29):**
+- Upgraded `react` and `react-dom` to **19.2.3** to mitigate **CVE-2025-55183** and **CVE-2025-55184**.
+- Upgraded `next` to **16.0.7** to mitigate **CVE-2025-66478** (React2Shell / RSC RCE).
+
+**Remediation steps (required):**
+1. Run `npm install` to update your `package-lock.json`.
+2. Run `npm audit` and address any remaining advisories (use `npm audit fix` if possible).
+3. Rotate sensitive environment variables if your deployment was exposed prior to patching.
+4. Deploy immediately and verify the production build.
+
+**Helpful tools:** `npx fix-react2shell-next` can automate upgrades for Next.js projects.
 
 ## Credits
 
