@@ -20,8 +20,8 @@ This project has been fully converted from a single-page vanilla JS app into a *
 
 ## Tech Stack
 
-- Next.js 14+ (App Router)
-- React 18
+- Next.js 16 (App Router)
+- React 19.2.3
 - TypeScript strict mode
 
 ## Development
@@ -61,6 +61,10 @@ npm run start
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
+
+## Security
+
+✅ **Dependency update (2025-12-29):** Upgraded `react` and `react-dom` to **19.2.3** to mitigate **CVE-2025-55183** and **CVE-2025-55184**. After pulling these changes run `npm install` to refresh your lockfile and then `npm audit` to verify there are no remaining advisories.
 
 ## Credits
 
